@@ -53,7 +53,28 @@ body {
   font-weight: normal;
 }
 
+.frontcover-wrapper {
+  width: 100%;
+  height: 148mm;
+  position: relative;
+}
+
+.frontcover {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .frontcover-title {
   width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+
+.frontcover-text {
+  width: 100%;
+  max-width: 57mm;
+  margin: 0 auto;
+  text-align: justify;
 }
