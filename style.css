@@ -1,0 +1,59 @@
+/* this stylesheet is used when generating a PDF with PrinceXML or any other tool that understands the CSS used. */
+
+@font-face {
+  font-family: 'date-font';
+  src: url('fonts/date-font.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'title-font';
+  src: url('fonts/title-font.ttf') format("truetype");
+}
+
+body {
+  font-family: title-font;
+  line-height: 1.5;
+  font-size: 10px;
+}
+
+@page {
+  size: 105mm 148mm;
+}
+
+@page {
+  margin: 4mm 0mm;
+  @bottom-center {
+    content: flow(dates);
+  }
+}
+
+.page {
+  margin: 0;
+  page: page;
+  height: 140mm;
+  width: 105mm;
+}
+
+.likes {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  max-width: 57mm;
+}
+
+.dates {
+  flow: static(dates);
+  text-align: center;
+  font-family: date-font;
+  font-size: 6px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.frontcover-title {
+  width: 100%;
+  text-align: center;
+}

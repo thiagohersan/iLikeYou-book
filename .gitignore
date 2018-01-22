@@ -1,0 +1,4 @@
+*.pdf
+*.html
+!template.html
+.DS*
